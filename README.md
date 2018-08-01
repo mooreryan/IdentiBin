@@ -6,7 +6,7 @@ This program has been designed for two primary purposes:
 1. Identify **identical bins** from multiple assembly techniques so that the best version (i.e. most complete and least redundant/contaminated) of a bin can be selected.
 2. Identify the amount of **new information** contained within one bin compared to another. Good for understanding how assembly techniques affect bin fidelity.
 
-Admitedly, this is similar in purpose to other software packages, such as the excellent program [dRep](https://github.com/MrOlm/drep), though this could be used in conjunction. dRep uses ANI metrics to determine the relatedness of bins so that bins can be dereplicated. One potential pitfall in ANI is that the metric can be susceptible to incompleteness and contig fragmentation (the kind that you might see, for instance, when comparing assemblies of bins at different coverage levels). IdentiBin uses open reading frame (ORF) or amino acid calls to avoid these kinds of pitfalls.
+Admittedly, this is similar in purpose to other software packages, such as the excellent program [dRep](https://github.com/MrOlm/drep), though this could be used in conjunction. dRep uses ANI metrics to determine the relatedness of bins so that bins can be dereplicated. One potential pitfall in ANI is that the metric can be susceptible to incompleteness and contig fragmentation (the kind that you might see, for instance, when comparing assemblies of bins at different coverage levels). IdentiBin uses open reading frame (ORF) or amino acid calls to avoid these kinds of pitfalls.
 
 The **main difference here is that we are comparing the percentage of novel 100% identical ORF clusters** between two bins. So, the resulting metric is EXTREMELY conservative. This was by design, so that we could identify bins from identical organisms between assemblies, not just closely related organisms within a species.
 
@@ -33,7 +33,7 @@ gem install fileutils systemu parse_fasta abort_if parallel
 
 ## Installation
 
-Download the repository from github: [IdentiBin](https://github.com/mooreryan/seanie_parallel)
+Download the repository from GitHub: [IdentiBin](https://github.com/mooreryan/seanie_parallel)
 
 ## Usage
 
